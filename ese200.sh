@@ -5,12 +5,12 @@
 echo "Il nome del file eseguibile e' \"$0\""
 echo
 
-if [ $# -gt 1 ]
+if [ $# -gt 0 ]
 then
 	i=0
 	for arg in "$@"
 	do
-		i=$(($i + 1))
+		i=$(( $i+1 ))
 	    echo "L'argomento $i e': \"$arg\""
 	done
 else
